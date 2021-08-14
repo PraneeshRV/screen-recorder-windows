@@ -8,13 +8,12 @@ require('./lib/events')
 if (require('electron-squirrel-startup')) {
     app.quit()
 }
-
 Menu.setApplicationMenu(null)
 
 const createWindow = () => {
   const mainWindow = new BrowserWindow({
-    width: 625,
-    height: 556,
+    width: 600,
+    height: 650,
     webPreferences: {
       nodeIntegration: true
     }

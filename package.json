@@ -5,21 +5,23 @@
   "description": "A Desktop screen recorder app built using web technologies",
   "main": "src/main/index.js",
   "scripts": {
-    "start": "MODE=development electron-forge start",
+    "start": "electron-forge start",
     "postinstall": "electron-builder install-app-deps",
     "release": "electron-builder --publish always",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
     "ci:release": "git commit -am v2.1.1 && git tag v2.1.1; git push origin master && git push origin master --tags",
     "lint": "echo \"No linting configured\""
   },
   "keywords": [],
   "author": {
-    "name": "Dalton Menezes",
-    "email": "daltonmenezes@outlook.com"
+    "name": "Praneesh R V"
   },
   "license": "MIT",
   "build": {
-    "appId": "com.daltonmenezes.electron-screen-recorder",
-    "productName": "Electron Screen Recorder",
+    "appId": "com.praneeshrv.screen-recorder",
+    "productName": "Screen Recorder",
     "mac": {
       "category": "public.app-category.utilities"
     },
